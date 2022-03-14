@@ -1,6 +1,6 @@
 # Android Java Mobile App with a WebView in a Fragment
 
-This project can be used to debug problems when displaying a WebView in a Fragment.
+This project can be used to debug problems when displaying a WebView in a Fragment. [Compare with the project that uses an Activity.](https://github.com/fullStackOasis/android-java-webview-activity)
 
 Some websites just don't load in this demo.
 
