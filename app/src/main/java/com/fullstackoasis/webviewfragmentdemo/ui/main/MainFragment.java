@@ -54,15 +54,21 @@ public class MainFragment extends Fragment {
 
     private void setUpWebView() {
         WebView myWebView = (WebView) getActivity().findViewById(R.id.webview);
+        myWebView.loadUrl(myurl);
         WebSettings webSettings = myWebView.getSettings();
+
         webSettings.setJavaScriptEnabled(true);
+        /*
         webSettings.setDomStorageEnabled(true);
         webSettings.setUseWideViewPort(true);
         webSettings.setBuiltInZoomControls(false);
         webSettings.setSupportZoom(false);
+        */
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+
+
         // Experiment with user agent string
         // webSettings.setUserAgentString("Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion");
         // webSettings.setUserAgentString("Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion");
@@ -79,7 +85,6 @@ public class MainFragment extends Fragment {
             applyWebViewController(myWebView);
             //applyWebChromeClient(myWebView);
         }
-        myWebView.loadUrl(myurl);
 
     }
     public class WebViewController extends WebViewClient {
