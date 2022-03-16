@@ -36,3 +36,6 @@ Change app:layout_constraintBottom_toTopOf="parent" in `LinearLayout`.
 * Tried moving `myWebView.loadUrl(myurl)` before and after applying settings.
 
 [StackOverflow link to question from someone else about "Activity webview and Fragment Webview different behaviour"](https://stackoverflow.com/questions/32140073/activity-webview-and-fragment-webview-different-behaviour)
+
+Edit: With commit a9e8585 the problem was fixed. When the ScrollView is removed, and height and width are set to match_parent, the problem goes away. At that point, the menu behaves as expected, opening a drawer from the left.
+
