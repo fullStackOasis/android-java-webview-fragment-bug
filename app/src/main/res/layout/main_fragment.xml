@@ -4,27 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-
+<!--
     <ScrollView
         android:id="@+id/sv_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
-
+-->
         <LinearLayout
             android:id="@+id/ll_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
 
             <WebView
                 android:id="@+id/webview"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
             </WebView>
 
         </LinearLayout>
-    </ScrollView>
+<!--    </ScrollView> -->
 </androidx.constraintlayout.widget.ConstraintLayout>
